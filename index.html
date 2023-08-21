@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,300;0,400;0,500;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/Newsletter-Signup/images/favicon-32x32.png">
+    <title>Newsletter Signup</title>
+    
+</head>
+<body>
+    <div class="container" id="front_page_container">
+        <div class="img-box">
+            <img class="illustration" src="images/illustration-sign-up-desktop.svg" alt="illustration">
+        </div>
+        
+        <div class="title">
+            <h2>Stay updated!</h2>
+        </div>
+        <p class="title-text">Join 60,000+ product managers receiving monthly<br>updates on:</p>   
+        <div class="list">
+            <ul>
+                <li>Product discovery and building what matters<br></li>
+                <li>Measuring to ensure updates are a success<br></li>
+                <li>And much more!<br></li>
+            </ul>
+        </div>
+        <form>
+            <p class="email-title">Email-address</p>
+            <div class="error" id="error" aria-hidden="true"></div>
+            <p class="error-message" id="error-message" aria-hidden="true">Valid email required</p>
+            <label for="email-address" id="input_label"></label>
+            <input class="input" id="input_field" type="email" name="email" placeholder="email@company.com">
+            <button class="subscribe-button" id="subscribe-btn">Subscribe to monthly newsletter</button>
+        </form>
+    </div>
+    <form class="success-state">
+        <div class="success-message-container" id="success-message-container">    
+            <img class="icon-success" src="images/icon-success.svg">
+            <h1>Thanks for subscribing!</h1>
+            <div class="success-message">A confirmation email has been sent to <br><p id="displayText"></p> .Please open it and click<br> the button inside to confirm your subscription.</div>
+            <button class="dismiss-button">Dismiss message</button>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
