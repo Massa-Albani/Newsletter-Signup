@@ -15,38 +15,47 @@
 </head>
 <body>
     <div class="container" id="front_page_container">
-        <div class="img-box">
-            <img class="illustration" src="images/illustration-sign-up-desktop.svg" alt="illustration">
-        </div>
-        
-        <div class="title">
-            <h2>Stay updated!</h2>
-        </div>
-        <p class="title-text">Join 60,000+ product managers receiving monthly<br>updates on:</p>   
-        <div class="list">
-            <ul>
-                <li>Product discovery and building what matters<br></li>
-                <li>Measuring to ensure updates are a success<br></li>
-                <li>And much more!<br></li>
-            </ul>
-        </div>
-        <form>
+        <header>
+            <div class="title">
+                <h2>Stay updated!</h2>
+            </div>
+            <p class="title-text">Join 60,000+ product managers receiving monthly<br>updates on:</p>    
+        </header>        
+        <nav>
+            <div class="list">
+                <ul>
+                    <li>Product discovery and building what matters<br></li>
+                    <li>Measuring to ensure updates are a success<br></li>
+                    <li>And much more!<br></li>
+                </ul>
+            </div>
+            <div class="img-box">
+                <img class="illustration" src="images/illustration-sign-up-desktop.svg" alt="illustration">
+            </div>
+        </nav>
+        <main>
             <p class="email-title">Email-address</p>
             <div class="error" id="error" aria-hidden="true"></div>
             <p class="error-message" id="error-message" aria-hidden="true">Valid email required</p>
             <label for="email-address" id="input_label"></label>
             <input class="input" id="input_field" type="email" name="email" placeholder="email@company.com">
+        </main>
+        <footer>
             <button class="subscribe-button" id="subscribe-btn">Subscribe to monthly newsletter</button>
-        </form>
+        </footer>
     </div>
-    <form class="success-state">
         <div class="success-message-container" id="success-message-container">    
-            <img class="icon-success" src="images/icon-success.svg">
-            <h1>Thanks for subscribing!</h1>
-            <div class="success-message">A confirmation email has been sent to <br><p id="displayText"></p> .Please open it and click<br> the button inside to confirm your subscription.</div>
-            <button class="dismiss-button">Dismiss message</button>
+            <header>
+                <img class="icon-success" src="images/icon-success.svg">
+                <h1>Thanks for subscribing!</h1>
+            </header>
+            <main>
+                <div class="success-message">A confirmation email has been sent to <br><p id="displayText"></p> .Please open it and click<br> the button inside to confirm your subscription.</div>
+            </main>
+            <footer>
+                <button class="dismiss-button">Dismiss message</button>
+            </footer>
         </div>
-    </form>
     <script src="main.js"></script>
 </body>
 </html>

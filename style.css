@@ -236,8 +236,8 @@ input.invalid::placeholder {
 }
 .subscribe-button {
   position: relative;
-  top: 11pc;
-  left: -278px; 
+  top: 8.2pc;
+  left: 50px; 
   width: 44.3%;
   height: 46px;
   color: white;
@@ -255,6 +255,6 @@ input.invalid::placeholder {
 }
 button.invalid {
   position: relative;
-  top: 9.9pc;
-  left: -278px; 
+  top: 7pc;
+  left: 50px; 
 }
